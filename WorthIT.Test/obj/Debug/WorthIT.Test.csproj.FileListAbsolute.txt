@@ -1,0 +1,2 @@
+C:\Users\clement\Documents\Visual Studio 2013\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.exe.config
+C:\Users\clement\Documents\Visual Studio 2013\testProjet\WorthIT.Test\obj\Debug\WorthIT.Test.csprojResolveAssemblyReference.cache
