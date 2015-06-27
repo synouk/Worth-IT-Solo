@@ -1,6 +1,0 @@
-c:\users\clement\documents\visual studio 2013\Projects\testProjet\testProjet\bin\Debug\testProjet.exe.config
-c:\users\clement\documents\visual studio 2013\Projects\testProjet\testProjet\bin\Debug\testProjet.exe
-c:\users\clement\documents\visual studio 2013\Projects\testProjet\testProjet\bin\Debug\testProjet.pdb
-c:\users\clement\documents\visual studio 2013\Projects\testProjet\testProjet\obj\Debug\testProjet.csprojResolveAssemblyReference.cache
-c:\users\clement\documents\visual studio 2013\Projects\testProjet\testProjet\obj\Debug\testProjet.exe
-c:\users\clement\documents\visual studio 2013\Projects\testProjet\testProjet\obj\Debug\testProjet.pdb

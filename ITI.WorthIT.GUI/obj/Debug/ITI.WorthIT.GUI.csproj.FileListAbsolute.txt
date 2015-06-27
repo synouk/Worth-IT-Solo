@@ -1,0 +1,76 @@
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe.config
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.pdb
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csprojResolveAssemblyReference.cache
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Properties.Resources.resources
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csproj.GenerateResource.Cache
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.exe
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.pdb
+D:\Projet\ITI\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Form1.resources
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe.config
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.exe
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.pdb
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csprojResolveAssemblyReference.cache
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Form1.resources
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Properties.Resources.resources
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csproj.GenerateResource.Cache
+C:\Users\clement\Google Drive\Worthit\Worth'IT\Test\WorthIT\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.pdb
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe.config
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.exe
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.pdb
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.pdb
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csprojResolveAssemblyReference.cache
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Form1.resources
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Properties.Resources.resources
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csproj.GenerateResource.Cache
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\testProjet.exe
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\testProjet.pdb
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpNews.resources
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\ZedGraph.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\ZedGraph.xml
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\de\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\es\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\fr\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\hu\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\it\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\ja\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\pt\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\sv\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\tr\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpBonus.resources
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpEmployer.resources
+C:\Dev\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpMyAction.resources
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe.config
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.exe
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.pdb
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.pdb
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ObjectListView.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\testProjet.exe
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ObjectListView.pdb
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ObjectListView.xml
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\testProjet.pdb
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ZedGraph.xml
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\de\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\es\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\fr\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\hu\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\it\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ja\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\pt\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\sv\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\tr\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csprojResolveAssemblyReference.cache
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Form1.resources
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.Properties.Resources.resources
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.csproj.GenerateResource.Cache
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpAction.resources
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpEmployer.resources
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpBonuscs.resources
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpAdvise.resources

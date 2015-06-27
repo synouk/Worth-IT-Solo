@@ -1,2 +1,27 @@
-C:\Users\clement\Documents\Visual Studio 2013\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.exe.config
-C:\Users\clement\Documents\Visual Studio 2013\testProjet\WorthIT.Test\obj\Debug\WorthIT.Test.csprojResolveAssemblyReference.cache
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.pdb
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ITI.WorthIT.GUI.exe
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\nunit.framework.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ObjectListView.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\testProjet.exe
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ZedGraph.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ObjectListView.pdb
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ObjectListView.xml
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ITI.WorthIT.GUI.pdb
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\testProjet.pdb
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\nunit.framework.xml
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ZedGraph.xml
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\de\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\es\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\fr\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\hu\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\it\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\ja\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\pt\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\sv\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\tr\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Dev\S3\testProjet\WorthIT.Test\obj\Debug\WorthIT.Test.csprojResolveAssemblyReference.cache
+C:\Dev\S3\testProjet\WorthIT.Test\obj\Debug\WorthIT.Test.dll
+C:\Dev\S3\testProjet\WorthIT.Test\obj\Debug\WorthIT.Test.pdb

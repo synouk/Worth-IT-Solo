@@ -4,8 +4,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9CB671E-C042-4C88-AAF5-17E83954251F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{DB7F8078-99C0-4C1D-8600-2EF9C584B893}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WorthIT.Test</RootNamespace>
     <AssemblyName>WorthIT.Test</AssemblyName>
@@ -13,7 +13,6 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,19 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionInfoTest.cs" />
     <Compile Include="ActionTest.cs" />
-    <Compile Include="NewsInfoTest.cs" />
-    <Compile Include="NewsTest.cs" />
+    <Compile Include="ArgentTest.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\testProjet\WorthIT.csproj">
+    <ProjectReference Include="..\..\..\ObjectListViewFull-2.8.1\ObjectListViewDemo\ObjectListView\ObjectListView2012.csproj">
+      <Project>{18feda0c-d147-4286-b39a-01204808106a}</Project>
+      <Name>ObjectListView2012</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITI.WorthIT.GUI\ITI.WorthIT.GUI.csproj">
+      <Project>{f0dce75c-6c06-4dc3-a23e-24d80330175c}</Project>
+      <Name>ITI.WorthIT.GUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorthIT\WorthIT.csproj">
       <Project>{86e6768e-8c19-42af-bc20-2ff92d584f58}</Project>
       <Name>WorthIT</Name>
     </ProjectReference>

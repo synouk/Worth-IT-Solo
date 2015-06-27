@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.dll" total="16" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-27" time="13:37:17">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug" machine-name="SYNOUK" user="clement" user-domain="SYNOUK" />
+  <culture-info current-culture="fr-FR" current-uiculture="fr-FR" />
+  <test-suite type="Assembly" name="C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.dll" executed="True" result="Success" success="True" time="0.137" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="WorthIT" executed="True" result="Success" success="True" time="0.121" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.121" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="ActionTest" executed="True" result="Success" success="True" time="0.058" asserts="0">
+                <results>
+                  <test-case name="WorthIT.Test.ActionTest.Action_SellAction_Test" executed="True" result="Success" success="True" time="0.045" asserts="2" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="ArgentTest" executed="True" result="Success" success="True" time="0.018" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="SellAction_Argent_Test" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                    <results>
+                      <test-case name="WorthIT.Test.ArgentTest.SellAction_Argent_Test(500,1.5d,1.0d,100,1000,950)" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="WorthIT.Test.ArgentTest.SellAction_Argent_Test(1000,2.0d,1.0d,500,1500,500)" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="WorthIT.Test.ArgentTest.SellAction_Argent_Test(10000,1.0d,3.5d,10000,10500,26000)" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="WorthIT.Test.ArgentTest.SellAction_Argent_Test(200,1.0d,1.5d,100,700,1050)" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="UpdateNotorietyAfterNewEmployer_Argent_Test" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                    <results>
+                      <test-case name="WorthIT.Test.ArgentTest.UpdateNotorietyAfterNewEmployer_Argent_Test(100,1500,100,-500)" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="WorthIT.Test.ArgentTest.UpdateNotorietyAfterNewEmployer_Argent_Test(200,500,200,500)" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="WorthIT.Test.ArgentTest.UpdateNotorietyAfterNewEmployer_Argent_Test(500,200,500,800)" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="EmployerTest" executed="True" result="Success" success="True" time="0.029" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="CheckEmployer_Test" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                    <results>
+                      <test-case name="WorthIT.Test.EmployerTest.CheckEmployer_Test(1500,False)" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="WorthIT.Test.EmployerTest.CheckEmployer_Test(2500,True)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="WorthIT.Test.EmployerTest.CheckEmployer_Test(1000,False)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-case name="WorthIT.Test.EmployerTest.Constructor_EmployerInfos_Test" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                  <test-case name="WorthIT.Test.EmployerTest.Employer_ChangeEmployer_Test" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="WorthIT.Test.EmployerTest.EmployerInfos_GetEMployer_Test" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="WorthIT.Test.EmployerTest.EmployerInfos_NewEMployer_Test" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="WorthIT.Test.EmployerTest.EmployerInfos_OldEmployerDelete_Test" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

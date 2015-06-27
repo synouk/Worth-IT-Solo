@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1022]C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.dll</TopNode>
+  <SelectedNode>[0-1020]WorthIT.Test.EmployerTest.EmployerInfos_GetEMployer_Test</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1022]C:\Dev\S3\testProjet\WorthIT.Test\bin\Debug\WorthIT.Test.dll" Expanded="true" />
+    <Node UniqueName="[0-1023]WorthIT" Expanded="true" />
+    <Node UniqueName="[0-1024]WorthIT.Test" Expanded="true" />
+    <Node UniqueName="[0-1000]WorthIT.Test.ActionTest" Expanded="true" />
+    <Node UniqueName="[0-1002]WorthIT.Test.ArgentTest" Expanded="true" />
+    <Node UniqueName="[0-1012]WorthIT.Test.EmployerTest" Expanded="true" />
+  </Nodes>
+</VisualState>

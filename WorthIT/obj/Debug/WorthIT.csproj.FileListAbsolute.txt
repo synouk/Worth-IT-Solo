@@ -1,0 +1,27 @@
+C:\Users\clement\Documents\Visual Studio 2013\Projects\testProjet\testProjet\bin\Debug\testProjet.exe.config
+C:\Users\clement\Documents\Visual Studio 2013\Projects\testProjet\testProjet\obj\Debug\testProjet.exe
+C:\Users\clement\Documents\Visual Studio 2013\Projects\testProjet\testProjet\obj\Debug\testProjet.pdb
+C:\Users\clement\Documents\Visual Studio 2013\testProjet\testProjet\bin\Debug\testProjet.exe.config
+C:\Users\clement\Documents\Visual Studio 2013\testProjet\testProjet\obj\Debug\testProjet.exe
+C:\Users\clement\Documents\Visual Studio 2013\testProjet\testProjet\obj\Debug\testProjet.pdb
+C:\Users\clement\Documents\Visual Studio 2013\Projects\testProjet\testProjet\bin\Debug\testProjet.exe
+C:\Users\clement\Documents\Visual Studio 2013\Projects\testProjet\testProjet\bin\Debug\testProjet.pdb
+C:\Users\clement\Documents\Visual Studio 2013\Projects\testProjet\testProjet\obj\Debug\WorthIT.csprojResolveAssemblyReference.cache
+C:\Users\clement\Google Drive\testProjet\testProjet\bin\Debug\testProjet.exe.config
+C:\Users\clement\Google Drive\testProjet\testProjet\obj\Debug\testProjet.exe
+C:\Users\clement\Google Drive\testProjet\testProjet\obj\Debug\testProjet.pdb
+C:\Users\clement\Google Drive\testProjet\testProjet\bin\Debug\testProjet.exe
+C:\Users\clement\Google Drive\testProjet\testProjet\bin\Debug\testProjet.pdb
+C:\Users\clement\Google Drive\testProjet\testProjet\obj\Debug\WorthIT.csprojResolveAssemblyReference.cache
+C:\Dev\testProjet\WorthIT\bin\Debug\testProjet.exe.config
+C:\Dev\testProjet\WorthIT\obj\Debug\testProjet.exe
+C:\Dev\testProjet\WorthIT\obj\Debug\testProjet.pdb
+C:\Dev\testProjet\WorthIT\obj\Debug\WorthIT.csprojResolveAssemblyReference.cache
+C:\Dev\testProjet\WorthIT\bin\Debug\testProjet.exe
+C:\Dev\testProjet\WorthIT\bin\Debug\testProjet.pdb
+C:\Dev\S3\testProjet\WorthIT\bin\Debug\testProjet.exe.config
+C:\Dev\S3\testProjet\WorthIT\bin\Debug\testProjet.exe
+C:\Dev\S3\testProjet\WorthIT\bin\Debug\testProjet.pdb
+C:\Dev\S3\testProjet\WorthIT\obj\Debug\WorthIT.csprojResolveAssemblyReference.cache
+C:\Dev\S3\testProjet\WorthIT\obj\Debug\testProjet.exe
+C:\Dev\S3\testProjet\WorthIT\obj\Debug\testProjet.pdb
