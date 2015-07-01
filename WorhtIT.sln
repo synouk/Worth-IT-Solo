@@ -8,13 +8,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8892A7
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorthIT", "WorthIT\WorthIT.csproj", "{86E6768E-8C19-42AF-BC20-2FF92D584F58}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITI.WorthIT.GUI", "ITI.WorthIT.GUI\ITI.WorthIT.GUI.csproj", "{F0DCE75C-6C06-4DC3-A23E-24D80330175C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectListView2012", "..\..\ObjectListViewFull-2.8.1\ObjectListViewDemo\ObjectListView\ObjectListView2012.csproj", "{18FEDA0C-D147-4286-B39A-01204808106A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorthIT.Test", "WorthIT.Test\WorthIT.Test.csproj", "{DB7F8078-99C0-4C1D-8600-2EF9C584B893}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorthITV2", "WorthITV2\WorthITV2.csproj", "{4343B3ED-6127-44FA-BEF1-ED2CD40B1FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorhtITV2.Test", "WorhtITV2.Test\WorhtITV2.Test.csproj", "{0F9FBF1F-D947-4350-85FF-730D25D70061}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{86E6768E-8C19-42AF-BC20-2FF92D584F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86E6768E-8C19-42AF-BC20-2FF92D584F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86E6768E-8C19-42AF-BC20-2FF92D584F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86E6768E-8C19-42AF-BC20-2FF92D584F58}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F0DCE75C-6C06-4DC3-A23E-24D80330175C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0DCE75C-6C06-4DC3-A23E-24D80330175C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0DCE75C-6C06-4DC3-A23E-24D80330175C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,10 +30,14 @@ Global
 		{18FEDA0C-D147-4286-B39A-01204808106A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18FEDA0C-D147-4286-B39A-01204808106A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB7F8078-99C0-4C1D-8600-2EF9C584B893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB7F8078-99C0-4C1D-8600-2EF9C584B893}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB7F8078-99C0-4C1D-8600-2EF9C584B893}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB7F8078-99C0-4C1D-8600-2EF9C584B893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4343B3ED-6127-44FA-BEF1-ED2CD40B1FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4343B3ED-6127-44FA-BEF1-ED2CD40B1FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4343B3ED-6127-44FA-BEF1-ED2CD40B1FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4343B3ED-6127-44FA-BEF1-ED2CD40B1FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9FBF1F-D947-4350-85FF-730D25D70061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9FBF1F-D947-4350-85FF-730D25D70061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9FBF1F-D947-4350-85FF-730D25D70061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9FBF1F-D947-4350-85FF-730D25D70061}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

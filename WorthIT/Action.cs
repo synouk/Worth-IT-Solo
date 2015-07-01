@@ -19,16 +19,16 @@ namespace testProjet
         {
             this.u = u;
             ActionsInfo Ford = new ActionsInfo( this, "Ford", 1.0, 1.08, 0, "Voiture", 0, true, true, "Black" );
-            ActionsInfo Total = new ActionsInfo( this, "Total", 1.0, 1.05, 0, "Pétrole", 0, true, true, "Blue" );
+            ActionsInfo Total = new ActionsInfo( this, "Total", 1.1, 1.05, 0, "Pétrole", 0, true, true, "Blue" );
             ActionsInfo Ubisoft = new ActionsInfo( this, "Ubisoft", 1.2, 0.99, 0, "Informatique", 0, true, true, "Cyan" );
-            ActionsInfo Nokia = new ActionsInfo( this, "Nokia", 1.0, 0.98, 0, "Electronique", 0, true, true, "Green" );
-            ActionsInfo Acer = new ActionsInfo( this, "Acer", 1.0, 0.99, 0, "Voiture", 0, true, true, "Magenta" );
-            ActionsInfo Aesus = new ActionsInfo( this, "Aesus", 1.0, 0.99, 0, "Electronique", 0, true, true, "Red" );
-            ActionsInfo Chanel = new ActionsInfo( this, "Chanel", 1.0, 1.01, 0, "Vêtements", 0, true, true, "DarkMagenta" );
-            ActionsInfo BOSS = new ActionsInfo( this, "BOSS", 1.0, 1.01, 0, "Vêtements", 0, true, true, "Gray" );
-            ActionsInfo Foncia = new ActionsInfo( this, "Foncia", 1.0, 1.15, 0, "Immobilier", 0, true, true,"DarkRed" );
-            ActionsInfo Seloger = new ActionsInfo( this, "Seloger", 1.2, 0.99, 0, "Immobilier", 0, true, true, "DarkBlue" );
-            ActionsInfo Nissan = new ActionsInfo( this, "Nissan", 1.0, 1.1, 0, "Voiture", 0, true, true, "DarkGray" );
+            ActionsInfo Nokia = new ActionsInfo( this, "Nokia", 1.3, 0.98, 0, "Electronique", 0, true, true, "Green" );
+            ActionsInfo Acer = new ActionsInfo( this, "Acer", 1.4, 0.99, 0, "Voiture", 0, true, true, "Magenta" );
+            ActionsInfo Aesus = new ActionsInfo( this, "Aesus", 1.5, 0.99, 0, "Electronique", 0, true, true, "Red" );
+            ActionsInfo Chanel = new ActionsInfo( this, "Chanel", 0.9, 1.01, 0, "Vêtements", 0, true, true, "DarkMagenta" );
+            ActionsInfo BOSS = new ActionsInfo( this, "BOSS", 0.8, 1.01, 0, "Vêtements", 0, true, true, "Gray" );
+            ActionsInfo Foncia = new ActionsInfo( this, "Foncia", 0.7, 1.15, 0, "Immobilier", 0, true, true,"DarkRed" );
+            ActionsInfo Seloger = new ActionsInfo( this, "Seloger", 0.5, 0.99, 0, "Immobilier", 0, true, true, "DarkBlue" );
+            ActionsInfo Nissan = new ActionsInfo( this, "Nissan", 0.6, 1.1, 0, "Voiture", 0, true, true, "DarkGray" );
             
 
             A.Add( "Ford", Ford );
@@ -71,7 +71,7 @@ namespace testProjet
             get { return u; }
         }
         //Modifie la valeur de monté des actions concernées par une news
-        internal void ModifyRyse( Tuple<string, double> result )
+        internal void ModifyRyse( Tuple<string, double, string> result )
         {
             foreach( var pair in A )
             {
@@ -90,9 +90,9 @@ namespace testProjet
             return D;
         }
 
-        public int GetActionOnlyValue( string p )
+        public double GetActionOnlyValue( string p )
         {
-            int result = 0;
+            double result = 0.0;
            foreach (var pair in A)
            {
                if (pair.Value.getOnlyValue(p) !=0)
@@ -130,6 +130,14 @@ namespace testProjet
                 user.argent.UpdateAfterBuy( p1 * p2 );
             }
             
+        }
+
+        internal void stopNewsAction( string title, string affect )
+        {
+            foreach (var pair in A)
+            {
+                pair.Value.tryStopNews(title, affect);
+            }
         }
     }
        

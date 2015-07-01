@@ -60,7 +60,7 @@ namespace testProjet
             
         }
 
-        public void CheckNews( Tuple<string, double> result, Action A )
+        public void CheckNews( Tuple<string, double, string> result, Action A )
         {
 
             A.ModifyRyse(result);

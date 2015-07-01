@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WorthITV2.Advise">
+    <Position X="3" Y="3" Width="1.5" />
+    <Members>
+      <Field Name="ListOfAdvisors" Hidden="true" />
+      <Field Name="myGame" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAAAAEAAQAAAAAAAAAAAgQAAEAAAAAAAAAAAQAgAAEA=</HashCode>
+      <FileName>Advise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorthITV2.Advisors">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <Members>
+      <Field Name="_name" Hidden="true" />
+      <Field Name="_price" Hidden="true" />
+      <Field Name="_state" Hidden="true" />
+      <Field Name="thisBonusList" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgIAIEAAAQAAAAgAAAAAiAQAAAAAAAAAAAAABACAAAA=</HashCode>
+      <FileName>Advisors.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyAdivse" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.Bank">
+    <Position X="11.75" Y="5" Width="1.5" />
+    <Members>
+      <Field Name="MyAccount" Hidden="true" />
+      <Field Name="thisPlayer" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIQBBCAAAAAAAAAAAEAAAEAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Bank.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyUser" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.BankAccount">
+    <Position X="11.75" Y="6.75" Width="1.5" />
+    <Members>
+      <Field Name="_thisAccountMoney" Hidden="true" />
+      <Field Name="_ThisAccountSalary" Hidden="true" />
+      <Field Name="myBank" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAQCACAAAkAAAACAgAAAA=</HashCode>
+      <FileName>BankAccount.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyBank" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.EmployerMarket">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <Members>
+      <Field Name="allPossibleEmployerList" Hidden="true" />
+      <Field Name="myGame" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAEBAAAAAIAAAAAAABAAAgAAAAAAAQAAAAMA=</HashCode>
+      <FileName>EmployerMarket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyGame" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.GameContext">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="random" Hidden="true" />
+      <Field Name="rnd" Hidden="true" />
+      <Field Name="thisGameAdvise" Hidden="true" />
+      <Field Name="thisGameEmployerMarket" Hidden="true" />
+      <Field Name="thisGameMarket" Hidden="true" />
+      <Field Name="thisGameNewsPaper" Hidden="true" />
+      <Field Name="thisGameUser" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAEBIAIAAgAQAACQAEAAACAFAAAAAAAAAQAAAAEABA=</HashCode>
+      <FileName>GameContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ThisAdvise" />
+      <Property Name="ThisUser" />
+      <Property Name="ThisMarket" />
+      <Property Name="ThisNewsPaper" />
+      <Property Name="ThisEmployerMarket" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.Market">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="ListOfAllMarket" Hidden="true" />
+      <Field Name="myGame" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAiAACBAAgAgAAAAAQAAACAAAAAACAAAAAAQAAAAMA=</HashCode>
+      <FileName>Market.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyGame" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.MarketValue">
+    <Position X="6" Y="6" Width="1.5" />
+    <Members>
+      <Field Name="_name" Hidden="true" />
+      <Field Name="_part" Hidden="true" />
+      <Field Name="_possess" Hidden="true" />
+      <Field Name="_ryse" Hidden="true" />
+      <Field Name="_type" Hidden="true" />
+      <Field Name="_value" Hidden="true" />
+      <Field Name="ActionValue" Hidden="true" />
+      <Field Name="affichage1" Hidden="true" />
+      <Field Name="affichage2" Hidden="true" />
+      <Field Name="C" Hidden="true" />
+      <Field Name="L" Hidden="true" />
+      <Field Name="newsDictionary" Hidden="true" />
+      <Field Name="previousRyse" Hidden="true" />
+      <Field Name="previousValue" Hidden="true" />
+      <Field Name="thisMarket" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABSAKIABIAAAgowIAAQEIAcAAAAxAICAIQCgoyQAAIA=</HashCode>
+      <FileName>MarketValue.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyMarket" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.NewsPaper">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="AllPossibleNewsList" Hidden="true" />
+      <Field Name="myGame" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAACAAAAAAAAAAQAAAAACAAAAAARAAAAEA=</HashCode>
+      <FileName>NewsPaper.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyGame" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.PossibleEmployer">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="_thisEmployerName" Hidden="true" />
+      <Field Name="_thisEmployerNotorietyRequire" Hidden="true" />
+      <Field Name="_thisEmployerSalary" Hidden="true" />
+      <Field Name="_thisEmployerState" Hidden="true" />
+      <Field Name="thisEmployerMarket" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAECAAAAAACAAAAgAAAABAAQIQACIEAQAAAA=</HashCode>
+      <FileName>PossibleEmployer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyEmployerMarket" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.PossibleNews">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <Members>
+      <Field Name="_activationChance" Hidden="true" />
+      <Field Name="_affect" Hidden="true" />
+      <Field Name="_bonusAdvisor" Hidden="true" />
+      <Field Name="_desactivationChance" Hidden="true" />
+      <Field Name="_extension" Hidden="true" />
+      <Field Name="_extensionChance" Hidden="true" />
+      <Field Name="_message" Hidden="true" />
+      <Field Name="_state" Hidden="true" />
+      <Field Name="_title" Hidden="true" />
+      <Field Name="_type" Hidden="true" />
+      <Field Name="_typeOfAffect" Hidden="true" />
+      <Field Name="thisGameNewsPaper" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAggCMYAgAEwAAAQACAAQQGAAAACAEYEAJBAEBEA=</HashCode>
+      <FileName>PossibleNews.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyNewsPaper" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WorthITV2.User">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="myBank" Hidden="true" />
+      <Field Name="myGame" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAQAAAAEA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyGame" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

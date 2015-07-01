@@ -122,9 +122,13 @@
       <Project>{18feda0c-d147-4286-b39a-01204808106a}</Project>
       <Name>ObjectListView2012</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WorthIT\WorthIT.csproj">
-      <Project>{86e6768e-8c19-42af-bc20-2ff92d584f58}</Project>
-      <Name>WorthIT</Name>
+    <ProjectReference Include="..\WorhtITV2.Test\WorhtITV2.Test.csproj">
+      <Project>{0f9fbf1f-d947-4350-85ff-730d25d70061}</Project>
+      <Name>WorhtITV2.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorthITV2\WorthITV2.csproj">
+      <Project>{4343b3ed-6127-44fa-bef1-ed2cd40b1fbb}</Project>
+      <Name>WorthITV2</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

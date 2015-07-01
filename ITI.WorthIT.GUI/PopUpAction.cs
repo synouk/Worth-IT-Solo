@@ -7,23 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using testProjet;
+using WorthITV2;
 
 namespace ITI.WorthIT.GUI
 {
     public partial class PopUpAction : Form
     {
         Form1 f;
-        user u;
-        testProjet.Action action;
+        GameContext myGame;
+        Market myMarket;
         public Dictionary<string , Tuple<double, int>> actionToBuy = new Dictionary<string, Tuple<double, int>>();
         public double prix ;
-        public PopUpAction(Form1 f, user u, testProjet.Action a)
+        public PopUpAction(Form1 f, GameContext g, Market m)
         {
             InitializeComponent();
             this.f = f;
-            this.u = u;
-            this.action = a;
+            myGame = g;
+            myMarket = m;
             ShowMyActions();
             prix = 0.0;
             label2.Text = prix.ToString();
@@ -32,11 +32,11 @@ namespace ITI.WorthIT.GUI
         private void ShowMyActions()
         {
             int X = 1;
-            foreach( var pair in u.action.A)
+            foreach( var pair in myMarket.ListOfAllMarket)
             {
                 //Create nale of action
                 System.Windows.Forms.Label NameA = new System.Windows.Forms.Label();
-                NameA.Text = pair.Value.name;
+                NameA.Text = pair.Name;
                 NameA.AutoSize = true;
                 //Position label on screen
                 NameA.Left = 100;
@@ -45,7 +45,7 @@ namespace ITI.WorthIT.GUI
                 this.Controls.Add( NameA );
 
                 System.Windows.Forms.Label PossessA = new System.Windows.Forms.Label();
-                PossessA.Text = pair.Value.possess.ToString();
+                PossessA.Text = pair.Possess.ToString();
                 PossessA.AutoSize = true;
                 //Position label on screen
                 PossessA.Left = 200;
@@ -56,7 +56,7 @@ namespace ITI.WorthIT.GUI
 
                 //Create number of action
                 System.Windows.Forms.NumericUpDown NumA= new System.Windows.Forms.NumericUpDown(); ;
-                NumA.Name = pair.Value.name;
+                NumA.Name = pair.Name;
                 NumA.Maximum = 500000;
                 NumA.Value = 0;
                 NumA.AutoSize = true;
@@ -75,7 +75,7 @@ namespace ITI.WorthIT.GUI
                 //Position label on screen
                 Sell.Left = 450;
                 Sell.Top = (X + 1) * 20;
-                Sell.Name = pair.Key;
+                Sell.Name = pair.Name;
                 Sell.Click += new System.EventHandler( this.SellClick1 );
                 //Add controls to form
                 this.Controls.Add( Sell );
@@ -92,8 +92,9 @@ namespace ITI.WorthIT.GUI
             Tuple<double, int> res;
             if (f.actionNumberAndValue.TryGetValue(nameToSell, out res))
             {
-                action.SellAction( nameToSell, res.Item2, res.Item1 );
+               myMarket.SellAction( nameToSell, res.Item2, res.Item1 );
             }
+            actionToBuy.Clear();
             f.upTab();
             f.UpdateP();
         }
@@ -103,7 +104,7 @@ namespace ITI.WorthIT.GUI
             var numericUpDown = sender as NumericUpDown;
             int number = Convert.ToInt32( numericUpDown.Value );
             string name = numericUpDown.Name;
-            double value = action.GetActionOnlyValue( name );
+            double value = myMarket.GetActionOnlyValue( name );
             Tuple<double, int> res;
             prix += number * value;
             if (actionToBuy.TryGetValue(name, out res))
@@ -122,11 +123,11 @@ namespace ITI.WorthIT.GUI
         {
             var res = sender as Button;
             Tuple<double, int> result;
-            if (u.argent.GetMoney()> prix)
+            if (myGame.ThisUser.MyBank.MyAccount.ThisAccountMoney> prix)
             {
                 foreach (var pair in actionToBuy)
                 {
-                    action.BuyMyActions( pair.Value.Item1, pair.Value.Item2, pair.Key );
+                    myMarket.BuyMyActions( pair.Value.Item1, pair.Value.Item2, pair.Key );
                     if (f.actionNumberAndValue.TryGetValue(pair.Key, out result))
                     {
                         
@@ -138,8 +139,8 @@ namespace ITI.WorthIT.GUI
                         f.actionNumberAndValue.Add( pair.Key, Tuple.Create( pair.Value.Item1, pair.Value.Item2 ) );
                     }
                 }
-                u.argent.UpdateAfterBuy( prix );
                 prix = 0.0;
+                actionToBuy.Clear();
                 f.upTab();
                 f.UpdateP();
             }

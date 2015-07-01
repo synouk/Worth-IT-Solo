@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using testProjet;
 using ZedGraph;
 using BrightIdeasSoftware.Design;
 using BrightIdeasSoftware.Properties;
@@ -16,6 +15,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
+using WorthITV2;
 
 namespace ITI.WorthIT.GUI
 {
@@ -31,13 +31,13 @@ namespace ITI.WorthIT.GUI
         public Dictionary <string , LineItem> CurveName = new Dictionary<string, LineItem>();
         public Dictionary <string , LineItem> CurveName2 = new Dictionary<string, LineItem>();
         public Dictionary<string , Tuple<double, int>> actionNumberAndValue = new Dictionary<string, Tuple<double, int>>();
-        user user;
+        GameContext thisGame;
 
 
         public Form1()
         {
 
-            user = new user();
+             thisGame = new GameContext();
             InitializeComponent();
             timer1.Tick += new EventHandler( timer1_Tick );
             timeTurn.Tick += new EventHandler( timer2_Tick );
@@ -59,13 +59,13 @@ namespace ITI.WorthIT.GUI
 
         private void timer2_Tick( object sender, EventArgs e )
         {
-            Tuple <string, int , int , string> result = user.NextTurn();
+            Tuple <string, int , int , string> result = thisGame.NextTurn();
 
             string  pseudo = result.Item1;
             string  argent = Convert.ToString( result.Item2 );
             string notoriété = Convert.ToString( result.Item3 );
             string employer = result.Item4;
-            int not = user.argent.getNotoriety();
+            int not = thisGame.ThisUser.MyBank.MyAccount.ThisAccountNotoriety;
             string noto = not.ToString();
 
             UpdateAll();
@@ -81,8 +81,8 @@ namespace ITI.WorthIT.GUI
 
         private void timer1_Tick( object sender, EventArgs e )
         {
-            string strString = "   ";
-            News news = user.GetNews();
+            string strString = "";
+            NewsPaper news = thisGame.ThisNewsPaper;
             Dictionary <string , string > News = news.GetActivateNews();
             foreach( var pair in News )
             {
@@ -102,13 +102,13 @@ namespace ITI.WorthIT.GUI
 
         public void showGraph()
         {
-            foreach( var pair in user.action.A )
+            foreach( var pair in thisGame.ThisMarket.ListOfAllMarket)
             {
 
-                double value = pair.Value.getValue();
-                string C = pair.Value.GetColor();
-                string name = pair.Value.name;
-                List<double> L = pair.Value.getGraph();
+                double value = pair.Value;
+                string C = pair.GetColor();
+                string name = pair.Name;
+                List<double> L = pair.getGraph();
                 int x = 1;
                 PointPairList list1 = new PointPairList();
                 foreach( double V in L )
@@ -123,23 +123,23 @@ namespace ITI.WorthIT.GUI
                 LineItem myCurve2 =zedGraphControl2.GraphPane.AddCurve( name, list1, Color.FromName( C ) );
                 CurveName2.Add( name, myCurve2 );
 
-                foreach( var obj in user.action.A )
+                foreach( var obj in thisGame.ThisMarket.ListOfAllMarket )
                 {
-                    if( obj.Value.affichage1 == true )
+                    if( obj.affichage1 == true )
                     {
-                        curveVisibility( obj.Value.name );
+                        curveVisibility( obj.Name );
                     }
-                    else if( obj.Value.affichage1 == false )
+                    else if( obj.affichage1 == false )
                     {
-                        curveNoVisibility( obj.Value.name );
+                        curveNoVisibility( obj.Name );
                     }
-                    if( obj.Value.affichage2 == true )
+                    if( obj.affichage2 == true )
                     {
-                        curveVisibility2( obj.Value.name );
+                        curveVisibility2( obj.Name );
                     }
-                    else if( obj.Value.affichage2 == false )
+                    else if( obj.affichage2 == false )
                     {
-                        curveNoVisibility2( obj.Value.name );
+                        curveNoVisibility2( obj.Name );
                     }
                 }
 
@@ -165,9 +165,9 @@ namespace ITI.WorthIT.GUI
         public void UpdateP()
         {
 
-            label4.Text = user.argent.GetMoney().ToString();
-            label3.Text = user.argent.getNotoriety().ToString();
-            label5.Text = user.employer.getEmployer();
+            label4.Text = thisGame.ThisUser.MyBank.MyAccount.ThisAccountMoney.ToString();
+            label3.Text = thisGame.ThisUser.MyBank.MyAccount.ThisAccountNotoriety.ToString();
+            label5.Text = thisGame.ThisEmployerMarket.MyEmployer().ToString();
             upTab();
             showEmployer();
             showBonus();
@@ -177,7 +177,7 @@ namespace ITI.WorthIT.GUI
         public void upTab()
         {
 
-            List<ActionsInfo> Ai = user.action.GetActionsInfo();
+            List<MarketValue> Ai = thisGame.ThisMarket.GetActionsInfo();
             this.objectListView1.SetObjects( Ai );
 
 
@@ -185,15 +185,15 @@ namespace ITI.WorthIT.GUI
 
         public void showEmployer()
         {
-            Employer E = user.GetEmployer();
-            List<EmployerInfo> L = E.getEmployerInfo();
+            EmployerMarket E = thisGame.ThisEmployerMarket;
+            List<PossibleEmployer> L = E.getEmployerInfo();
             this.objectListView2.SetObjects( L );
 
         }
 
         public void showBonus()
         {
-            List<BonusInfo> L = user.bonus.getBonusInfo();
+            List<Advisors> L = thisGame.ThisAdvise.getBonusInfo();
             this.objectListView3.SetObjects( L );
         }
 
@@ -204,23 +204,23 @@ namespace ITI.WorthIT.GUI
                 string subName = item.SubItems[0].Text;
                 if( item.SubItems[5].Text == "True" )
                 {
-                    user.action.changeState( subName, 1, true );
+                    thisGame.ThisMarket.changeState( subName, 1, true );
                 }
                 else if( item.SubItems[5].Text == "False" )
                 {
-                    user.action.changeState( subName, 1, false );
+                    thisGame.ThisMarket.changeState( subName, 1, false );
                 }
                 if( item.SubItems[6].Text == "True" )
                 {
-                    user.action.changeState( subName, 2, true );
+                    thisGame.ThisMarket.changeState( subName, 2, true );
                 }
                 else if( item.SubItems[6].Text == "False" )
                 {
-                    user.action.changeState( subName, 2, false );
+                    thisGame.ThisMarket.changeState( subName, 2, false );
                 }
             }
 
-            timerFast.Interval = 500;
+            timerFast.Interval = 200;
             timerFast.Start();
             timerFast.Tick += new EventHandler( timer3_Tick );
 
@@ -325,7 +325,7 @@ namespace ITI.WorthIT.GUI
         private void fimeToolStripMenuItem_Click( object sender, EventArgs e )
         {
             pause();
-            PopUpAction popup = new PopUpAction( this, user, user.action );
+            PopUpAction popup = new PopUpAction( this, thisGame, thisGame.ThisMarket );
             DialogResult dialogresult = popup.ShowDialog();
             popup.Dispose();
         }
@@ -333,7 +333,7 @@ namespace ITI.WorthIT.GUI
         private void employeurToolStripMenuItem_Click( object sender, EventArgs e )
         {
             pause();
-            PopUpEmployer popup = new PopUpEmployer( this, user );
+            PopUpEmployer popup = new PopUpEmployer( this, thisGame );
             DialogResult dialogresult = popup.ShowDialog();
             popup.Dispose();
         }
@@ -341,7 +341,7 @@ namespace ITI.WorthIT.GUI
         private void acheterUnBonusToolStripMenuItem_Click( object sender, EventArgs e )
         {
             pause();
-            PopUpBonuscs popup = new PopUpBonuscs( this, user );
+            PopUpBonuscs popup = new PopUpBonuscs( this, thisGame );
             DialogResult dialogresult = popup.ShowDialog();
             popup.Dispose();
         }
@@ -382,7 +382,7 @@ namespace ITI.WorthIT.GUI
         private void conseilsActifsToolStripMenuItem_Click( object sender, EventArgs e )
         {
             pause();
-            PopUpAdvise popup = new PopUpAdvise( this, user );
+            PopUpAdvise popup = new PopUpAdvise( this, thisGame);
             DialogResult dialogresult = popup.ShowDialog();
             popup.Dispose();
         }
@@ -393,7 +393,7 @@ namespace ITI.WorthIT.GUI
             using( Stream stream = File.Open( path, FileMode.Create ) )
             {
                 BinaryFormatter bin = new BinaryFormatter();
-                bin.Serialize( stream, this.user );
+                bin.Serialize( stream, thisGame );
             }
 
         }
@@ -401,13 +401,13 @@ namespace ITI.WorthIT.GUI
         private void button6_Click( object sender, EventArgs e )
         {
             string path = @"C:\Dev\S3\testProjet\Sauvegarde\Exemple1.bin";
-            user newUser =  LoadFile( path );
-            user = newUser;
+            GameContext newUser =  LoadFile( path );
+            thisGame = newUser;
             UpdateAll();
             
         }
 
-        public user LoadFile (string path)
+        public GameContext LoadFile (string path)
         {
             try
             {
@@ -423,7 +423,7 @@ namespace ITI.WorthIT.GUI
                 System.Runtime.Serialization.Formatters.Binary.BinaryFormatter _BinaryFormatter
 	                    = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
                 _MemoryStream.Position = 0;
-                return _BinaryFormatter.Deserialize( _MemoryStream ) as user;
+                return _BinaryFormatter.Deserialize( _MemoryStream ) as GameContext;
 
             }
             catch( Exception _Exception )
@@ -444,6 +444,11 @@ namespace ITI.WorthIT.GUI
             CurveName.Clear();
             CurveName2.Clear();
             showGraph();
+        }
+
+        private void Form1_Load( object sender, EventArgs e )
+        {
+
         }
     }
 }

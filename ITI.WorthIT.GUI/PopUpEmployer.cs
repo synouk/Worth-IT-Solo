@@ -7,57 +7,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using testProjet;
+using WorthITV2;
 
 namespace ITI.WorthIT.GUI
 {
     public partial class PopUpEmployer : Form
     {
-        user u;
+        WorthITV2.GameContext ThisGame;
         Form1 f;
-        public PopUpEmployer(Form1 f, user u )
+        public PopUpEmployer( Form1 f, WorthITV2.GameContext thisGame )
         {
-            this.u = u;
+            ThisGame = thisGame;
             this.f = f;
             InitializeComponent();
             showEmployer();
         }
 
+
         public void showEmployer()
         {
             int X = 1;
-            Employer E = u.GetEmployer();
-            foreach (var pair in E.D)
+            EmployerMarket E = ThisGame.ThisEmployerMarket;
+            foreach (var pair in E.allPossibleEmployerList)
             {
                 System.Windows.Forms.Label NameE = new System.Windows.Forms.Label();
-                NameE.Text = pair.Value.name;
+                NameE.Text = pair.ThisEmployerName;
                 NameE.AutoSize = true;
                 NameE.Left = 100;
                 NameE.Top = (X + 1) * 20;
                 this.Controls.Add( NameE );
 
                 System.Windows.Forms.Label SalaryE = new System.Windows.Forms.Label();
-                SalaryE.Text = pair.Value.money.ToString();
+                SalaryE.Text = pair.ThisEmployerSalary.ToString();
                 SalaryE.AutoSize = true;
                 SalaryE.Left = 200;
                 SalaryE.Top = (X + 1) * 20;
                 this.Controls.Add( SalaryE );
 
                 System.Windows.Forms.Label NotE = new System.Windows.Forms.Label();
-                NotE.Text = pair.Value.notoriety.ToString();
+                NotE.Text = pair.ThisEmployerNotorietyRequire.ToString();
                 NotE.AutoSize = true;
                 NotE.Left = 300;
                 NotE.Top = (X + 1) * 20;
                 this.Controls.Add( NotE );
 
-                if (pair.Value.state == "inactif")
+                if (pair.ThisEmployerState == "inactif")
                 {
                     System.Windows.Forms.Button Activate = new System.Windows.Forms.Button();
                     Activate.Text = "Se faire embaucher";
                     Activate.AutoSize = true;
                     Activate.Left = 400;
                     Activate.Top = (X + 1) * 20;
-                    Activate.Name = pair.Key;
+                    Activate.Name = pair.ThisEmployerName;
                     Activate.Click += new System.EventHandler( this.ActivateClick );
                     this.Controls.Add( Activate );
                 }
@@ -80,7 +81,7 @@ namespace ITI.WorthIT.GUI
         {
             var data = sender as Button;
             string name = data.Name;
-            Employer E = u.GetEmployer();
+            EmployerMarket E = ThisGame.ThisEmployerMarket;
             E.ChangeEmployer( name );
             f.UpdateP();
 

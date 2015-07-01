@@ -13,12 +13,15 @@ namespace testProjet
         Action a;
         public double value;
         public double ryse;
+        public double previousRyse = 1.0;
+        public double previousValue;
         public string type;
         public string name;
         public int possess;
         public bool affichage1;
         public bool affichage2;
         string C;
+        Dictionary<string, string> newsDictionary = new Dictionary<string, string>();
         List<double> L = new List<double>();
 
         public int part;
@@ -35,6 +38,7 @@ namespace testProjet
             this.affichage1 = affichage1;
             this.affichage2 = affichage2;
             this.C = C;
+            previousValue = value;
 
             this.part = part;
             L.Add(value);
@@ -44,6 +48,8 @@ namespace testProjet
         // Mise à jours des valeurs d'actions 
         public void Update()
         {
+            previousValue = value;
+            previousRyse = ryse;
             L.Add(value);
             if (value >= 5)
             {
@@ -72,12 +78,31 @@ namespace testProjet
         }
 
         // Mise à jours de la montée des actions concernées par une news
-        internal void ModifyRyse( Tuple<string, double> result )
+        internal void ModifyRyse( Tuple<string, double, string> result )
         {
+            
+            string value;
             if (result.Item1 == type)
             {
+                if (newsDictionary.TryGetValue(result.Item3, out value))
+                {
 
-                ryse = Arrondir (ryse * result.Item2);
+                }
+                else
+                {
+                    if (result.Item2 >1)
+                    {
+                        ryse = Arrondir( ryse * result.Item2 );
+                        newsDictionary.Add( result.Item3, "positif" );
+                    }
+                    else
+                    {
+                        ryse = Arrondir( ryse * result.Item2 );
+                        newsDictionary.Add( result.Item3, "negatif" );
+                    }
+                    
+                }
+                
             }            
             
         }
@@ -114,11 +139,11 @@ namespace testProjet
             this.part += part;
         }
 
-        internal int getOnlyValue( string p )
+        internal double getOnlyValue( string p )
         {
             if (name == p)
             {
-                return Convert.ToInt32( value );
+                return  value ;
             }
             else
             {
@@ -183,6 +208,16 @@ namespace testProjet
 
                 }
             }
+        }
+
+        internal void tryStopNews( string title, string affect )
+        {
+            string res;
+            if (newsDictionary.TryGetValue(title, out res))
+            {
+                newsDictionary.Remove( title );
+            }
+                                 
         }
     }
 }

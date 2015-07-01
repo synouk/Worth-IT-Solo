@@ -50,10 +50,8 @@ C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.pdb
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.exe
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ITI.WorthIT.GUI.pdb
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ObjectListView.dll
-C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\testProjet.exe
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ObjectListView.pdb
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ObjectListView.xml
-C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\testProjet.pdb
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\ZedGraph.xml
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\de\ZedGraph.resources.dll
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\es\ZedGraph.resources.dll
@@ -74,3 +72,7 @@ C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpAction.resou
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpEmployer.resources
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpBonuscs.resources
 C:\Dev\S3\testProjet\ITI.WorthIT.GUI\obj\Debug\ITI.WorthIT.GUI.PopUpAdvise.resources
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\WorhtITV2.Test.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\WorthITV2.dll
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\WorhtITV2.Test.pdb
+C:\Dev\S3\testProjet\ITI.WorthIT.GUI\bin\Debug\WorthITV2.pdb

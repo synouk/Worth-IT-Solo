@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="testProjet.Action">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="A" Hidden="true" />
+      <Field Name="u" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAgAgAAAAAQAAACAAAAAACAAAAIAIAAAAYA=</HashCode>
+      <FileName>Action.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.ActionsInfo">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <Members>
+      <Field Name="a" Hidden="true" />
+      <Field Name="ActionValue" Hidden="true" />
+      <Field Name="affichage1" Hidden="true" />
+      <Field Name="affichage2" Hidden="true" />
+      <Field Name="C" Hidden="true" />
+      <Field Name="L" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="newsDictionary" Hidden="true" />
+      <Field Name="part" Hidden="true" />
+      <Field Name="possess" Hidden="true" />
+      <Field Name="ryse" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+      <Field Name="value" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AASACIABAAAAgqAABAQAAAMAAAA1ACCgAAAAgyQAAIA=</HashCode>
+      <FileName>ActionsInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="up" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.Employer">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="D" Hidden="true" />
+      <Field Name="employer" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAEBAAAAAIAAAAAAABAAAAAAAAAIABAAABAA=</HashCode>
+      <FileName>Employer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="u" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.EmployerInfo">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <Members>
+      <Field Name="achat" Hidden="true" />
+      <Field Name="money" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="notoriety" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAECAAAAAAgAAAAAAAAAMAAAEAACAAgAAEAA=</HashCode>
+      <FileName>EmployerInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="E" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.News">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <Members>
+      <Field Name="N" Hidden="true" />
+      <Field Name="u" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAACAAAAAAAAAAQAAAAACAAAAIAABAAAUA=</HashCode>
+      <FileName>News.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.NewsInfo">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <Members>
+      <Field Name="activationChance" Hidden="true" />
+      <Field Name="affect" Hidden="true" />
+      <Field Name="BonusAdviser" Hidden="true" />
+      <Field Name="desactivationChance" Hidden="true" />
+      <Field Name="extension" Hidden="true" />
+      <Field Name="extensionChance" Hidden="true" />
+      <Field Name="message" Hidden="true" />
+      <Field Name="N" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Field Name="title" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+      <Field Name="typeOfAffect" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAQAAAEAAAAAQAAAAQAKABEAAEAAMAAhAAgGA=</HashCode>
+      <FileName>NewsInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="up" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.user" Collapsed="true">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEBIAIAEBAQAAAAAACgACAEAAAAABBAAUAAAABBAA=</HashCode>
+      <FileName>user.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="testProjet.Argent">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="employer" Hidden="true" />
+      <Field Name="money" Hidden="true" />
+      <Field Name="notoriety" Hidden="true" />
+      <Field Name="salary" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIABBAEAgAAgAAAAAEAAAEAAIAAAAAAMAAAAAFAA=</HashCode>
+      <FileName>Argent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="u" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.Bonus">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="B" Hidden="true" />
+      <Field Name="u" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAAAAEAAAAAAAAAAAAAAgQAAEAAAAAAAAAIAAAEAAQA=</HashCode>
+      <FileName>Bonus.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="user" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="testProjet.BonusInfo">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <Members>
+      <Field Name="achat" Hidden="true" />
+      <Field Name="B" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="price" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIBAEAAAAAAAAAAAgAAgAAAAAAEAAAEAAAAAgEAAAA=</HashCode>
+      <FileName>BonusInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="up" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

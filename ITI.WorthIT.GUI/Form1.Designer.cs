@@ -82,8 +82,10 @@
             // 
             // olvColumn9
             // 
-            olvColumn9.AspectName = "name";
-            olvColumn9.Text = "Name";
+            olvColumn9.AspectName = "ThisEmployerName";
+            olvColumn9.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            olvColumn9.Text = "Nom";
+            olvColumn9.Width = 85;
             // 
             // groupBox1
             // 
@@ -95,7 +97,7 @@
             this.groupBox1.Controls.Add(this.Argent);
             this.groupBox1.Controls.Add(this.Notoriété);
             this.groupBox1.Controls.Add(this.Pseudo);
-            this.groupBox1.Location = new System.Drawing.Point(664, 572);
+            this.groupBox1.Location = new System.Drawing.Point(1233, 674);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(246, 163);
             this.groupBox1.TabIndex = 5;
@@ -185,7 +187,7 @@
             this.objectListView1.AllColumns.Add(this.olvColumn5);
             this.objectListView1.AllowColumnReorder = true;
             this.objectListView1.AllowDrop = true;
-            this.objectListView1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.objectListView1.BackColor = System.Drawing.Color.Lavender;
             this.objectListView1.CheckedAspectName = "";
             this.objectListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.olvColumn1,
@@ -195,11 +197,11 @@
             this.olvColumn11,
             this.olvColumn12,
             this.olvColumn5});
-            this.objectListView1.Location = new System.Drawing.Point(945, 340);
+            this.objectListView1.Location = new System.Drawing.Point(654, 340);
             this.objectListView1.Name = "objectListView1";
             this.objectListView1.OwnerDraw = true;
             this.objectListView1.ShowImagesOnSubItems = true;
-            this.objectListView1.Size = new System.Drawing.Size(544, 505);
+            this.objectListView1.Size = new System.Drawing.Size(825, 330);
             this.objectListView1.TabIndex = 501;
             this.objectListView1.UseCompatibleStateImageBehavior = false;
             this.objectListView1.UseSubItemCheckBoxes = true;
@@ -211,61 +213,63 @@
             // 
             // olvColumn1
             // 
-            this.olvColumn1.AspectName = "name";
+            this.olvColumn1.AspectName = "Name";
             this.olvColumn1.HeaderForeColor = System.Drawing.Color.Blue;
-            this.olvColumn1.Text = "name";
+            this.olvColumn1.Text = "Nom";
             this.olvColumn1.Width = 73;
             // 
             // olvColumn2
             // 
-            this.olvColumn2.AspectName = "value";
-            this.olvColumn2.Text = "Value";
-            this.olvColumn2.Width = 79;
+            this.olvColumn2.AspectName = "PreviousValue";
+            this.olvColumn2.Text = "Valeur ";
+            this.olvColumn2.Width = 109;
             // 
             // olvColumn3
             // 
-            this.olvColumn3.AspectName = "ryse";
-            this.olvColumn3.Text = "ryse";
+            this.olvColumn3.AspectName = "PreviousRyse";
+            this.olvColumn3.Text = "Mouvement";
+            this.olvColumn3.Width = 109;
             // 
             // olvColumn4
             // 
-            this.olvColumn4.AspectName = "type";
-            this.olvColumn4.Text = "Type";
+            this.olvColumn4.AspectName = "Type";
+            this.olvColumn4.Text = "Milieu";
+            this.olvColumn4.Width = 140;
             // 
             // olvColumn11
             // 
-            this.olvColumn11.AspectName = "possess";
-            this.olvColumn11.Text = "Possess";
+            this.olvColumn11.AspectName = "Possess";
+            this.olvColumn11.Text = "Possédées";
+            this.olvColumn11.Width = 141;
             // 
             // olvColumn12
             // 
             this.olvColumn12.AspectName = "affichage1";
             this.olvColumn12.CheckBoxes = true;
             this.olvColumn12.IsTileViewColumn = true;
-            this.olvColumn12.Text = "Graph1";
+            this.olvColumn12.Text = "Graphique 1";
             this.olvColumn12.TriStateCheckBoxes = true;
-            this.olvColumn12.Width = 77;
+            this.olvColumn12.Width = 132;
             // 
             // olvColumn5
             // 
             this.olvColumn5.AspectName = "affichage2";
             this.olvColumn5.CheckBoxes = true;
-            this.olvColumn5.Text = "Graph2";
+            this.olvColumn5.Text = "Graphique 2";
             this.olvColumn5.TriStateCheckBoxes = true;
-            this.olvColumn5.Width = 80;
+            this.olvColumn5.Width = 184;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Blue;
+            this.label6.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(1, 837);
+            this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 28F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.Location = new System.Drawing.Point(12, 899);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(344, 41);
+            this.label6.Size = new System.Drawing.Size(2, 48);
             this.label6.TabIndex = 503;
-            this.label6.Text = "aaaaaaaaaaaaaaaaaaaaaaaaa";
             // 
             // objectListView2
             // 
@@ -273,16 +277,16 @@
             this.objectListView2.AllColumns.Add(this.olvColumn6);
             this.objectListView2.AllColumns.Add(this.olvColumn7);
             this.objectListView2.AllColumns.Add(this.Etat);
-            this.objectListView2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.objectListView2.BackColor = System.Drawing.Color.Lavender;
             this.objectListView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             olvColumn9,
             this.olvColumn6,
             this.olvColumn7,
             this.Etat});
-            this.objectListView2.Location = new System.Drawing.Point(1185, 27);
+            this.objectListView2.Location = new System.Drawing.Point(1059, 27);
             this.objectListView2.Name = "objectListView2";
             this.objectListView2.ShowImagesOnSubItems = true;
-            this.objectListView2.Size = new System.Drawing.Size(304, 307);
+            this.objectListView2.Size = new System.Drawing.Size(445, 307);
             this.objectListView2.TabIndex = 504;
             this.objectListView2.UseCompatibleStateImageBehavior = false;
             this.objectListView2.UseSubItemCheckBoxes = true;
@@ -290,36 +294,40 @@
             // 
             // olvColumn6
             // 
-            this.olvColumn6.AspectName = "money";
-            this.olvColumn6.Text = "Salary";
+            this.olvColumn6.AspectName = "ThisEmployerSalary";
+            this.olvColumn6.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.olvColumn6.Text = "Salaire";
+            this.olvColumn6.Width = 94;
             // 
             // olvColumn7
             // 
-            this.olvColumn7.AspectName = "notoriety";
-            this.olvColumn7.Text = "Notoriety";
-            this.olvColumn7.Width = 81;
+            this.olvColumn7.AspectName = "ThisEmployerNotorietyRequire";
+            this.olvColumn7.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.olvColumn7.Text = "Notoriété requise";
+            this.olvColumn7.Width = 149;
             // 
             // Etat
             // 
-            this.Etat.AspectName = "state";
+            this.Etat.AspectName = "ThisEmployerState";
+            this.Etat.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.Etat.Text = "Etat";
-            this.Etat.Width = 89;
+            this.Etat.Width = 129;
             // 
             // objectListView3
             // 
             this.objectListView3.AllColumns.Add(this.olvColumn8);
             this.objectListView3.AllColumns.Add(this.olvColumn10);
             this.objectListView3.AllColumns.Add(this.olvColumn13);
-            this.objectListView3.AlternateRowBackColor = System.Drawing.Color.Green;
-            this.objectListView3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.objectListView3.AlternateRowBackColor = System.Drawing.Color.GreenYellow;
+            this.objectListView3.BackColor = System.Drawing.Color.Lavender;
             this.objectListView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.olvColumn8,
             this.olvColumn10,
             this.olvColumn13});
-            this.objectListView3.Location = new System.Drawing.Point(945, 27);
+            this.objectListView3.Location = new System.Drawing.Point(654, 27);
             this.objectListView3.Name = "objectListView3";
             this.objectListView3.ShowImagesOnSubItems = true;
-            this.objectListView3.Size = new System.Drawing.Size(234, 307);
+            this.objectListView3.Size = new System.Drawing.Size(399, 307);
             this.objectListView3.TabIndex = 505;
             this.objectListView3.UseCompatibleStateImageBehavior = false;
             this.objectListView3.UseSubItemCheckBoxes = true;
@@ -327,21 +335,26 @@
             // 
             // olvColumn8
             // 
-            this.olvColumn8.AspectName = "name";
-            this.olvColumn8.Text = "name";
-            this.olvColumn8.Width = 61;
+            this.olvColumn8.AspectName = "Name";
+            this.olvColumn8.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.olvColumn8.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvColumn8.Text = "Nom";
+            this.olvColumn8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.olvColumn8.Width = 118;
             // 
             // olvColumn10
             // 
-            this.olvColumn10.AspectName = "price";
-            this.olvColumn10.Text = "price";
-            this.olvColumn10.Width = 67;
+            this.olvColumn10.AspectName = "Price";
+            this.olvColumn10.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.olvColumn10.Text = "Prix";
+            this.olvColumn10.Width = 118;
             // 
             // olvColumn13
             // 
-            this.olvColumn13.AspectName = "state";
+            this.olvColumn13.AspectName = "State";
+            this.olvColumn13.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.olvColumn13.Text = "Etat";
-            this.olvColumn13.Width = 97;
+            this.olvColumn13.Width = 141;
             // 
             // zedGraphControl1
             // 
@@ -361,14 +374,14 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(646, 401);
+            this.zedGraphControl1.Size = new System.Drawing.Size(647, 427);
             this.zedGraphControl1.TabIndex = 506;
             // 
             // zedGraphControl2
             // 
             this.zedGraphControl2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.zedGraphControl2.IsEnableVZoom = false;
-            this.zedGraphControl2.Location = new System.Drawing.Point(1, 434);
+            this.zedGraphControl2.Location = new System.Drawing.Point(0, 450);
             this.zedGraphControl2.Name = "zedGraphControl2";
             this.zedGraphControl2.ScrollGrace = 0D;
             this.zedGraphControl2.ScrollMaxX = 0D;
@@ -377,7 +390,7 @@
             this.zedGraphControl2.ScrollMinX = 0D;
             this.zedGraphControl2.ScrollMinY = 0D;
             this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(646, 411);
+            this.zedGraphControl2.Size = new System.Drawing.Size(647, 446);
             this.zedGraphControl2.TabIndex = 507;
             // 
             // menuStrip1
@@ -388,7 +401,7 @@
             this.bonusToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1501, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1590, 24);
             this.menuStrip1.TabIndex = 512;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -433,7 +446,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(661, 551);
+            this.label1.Location = new System.Drawing.Point(972, 709);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 18);
             this.label1.TabIndex = 514;
@@ -441,7 +454,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(664, 522);
+            this.button1.Location = new System.Drawing.Point(927, 676);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 23);
             this.button1.TabIndex = 515;
@@ -451,7 +464,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(731, 521);
+            this.button2.Location = new System.Drawing.Point(993, 676);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(42, 23);
             this.button2.TabIndex = 516;
@@ -461,7 +474,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(779, 521);
+            this.button3.Location = new System.Drawing.Point(1041, 676);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(43, 23);
             this.button3.TabIndex = 517;
@@ -471,7 +484,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(828, 521);
+            this.button4.Location = new System.Drawing.Point(1090, 676);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(43, 23);
             this.button4.TabIndex = 518;
@@ -483,7 +496,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(652, 340);
+            this.label7.Location = new System.Drawing.Point(499, 450);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(253, 69);
             this.label7.TabIndex = 520;
@@ -492,9 +505,15 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(654, 28);
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DarkTurquoise;
+            this.button5.FlatAppearance.BorderSize = 3;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button5.Font = new System.Drawing.Font("MS PGothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button5.Location = new System.Drawing.Point(789, 676);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 47);
+            this.button5.Size = new System.Drawing.Size(121, 98);
             this.button5.TabIndex = 522;
             this.button5.Text = "Save";
             this.button5.UseVisualStyleBackColor = true;
@@ -502,9 +521,11 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(776, 28);
+            this.button6.Font = new System.Drawing.Font("MS PGothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button6.Location = new System.Drawing.Point(654, 676);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(107, 47);
+            this.button6.Size = new System.Drawing.Size(129, 98);
             this.button6.TabIndex = 523;
             this.button6.Text = "Load";
             this.button6.UseVisualStyleBackColor = true;
@@ -513,8 +534,8 @@
             // Form1
             // 
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(1501, 881);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1590, 944);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label7);
@@ -536,6 +557,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.IsMdiContainer = true;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.TransparencyKey = System.Drawing.Color.AntiqueWhite;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).EndInit();
@@ -568,7 +592,6 @@
         private BrightIdeasSoftware.OLVColumn olvColumn4;
         private System.Windows.Forms.Label label6;
         private BrightIdeasSoftware.ObjectListView objectListView2;
-        private BrightIdeasSoftware.OLVColumn olvColumn6;
         private BrightIdeasSoftware.OLVColumn olvColumn7;
         private BrightIdeasSoftware.ObjectListView objectListView3;
         public BrightIdeasSoftware.OLVColumn olvColumn8;
@@ -596,6 +619,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        public BrightIdeasSoftware.OLVColumn olvColumn6;
 
 
     }

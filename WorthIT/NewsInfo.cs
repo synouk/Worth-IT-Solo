@@ -47,7 +47,8 @@ namespace testProjet
             {
                 if( state == "activé" )
                 {
-                    tryModifyState(desactivationChance,type);                                   
+                    tryModifyState(desactivationChance,type);
+                    N.stopNewsAction(title, affect);               
                 }
                 else 
                 {
@@ -103,15 +104,15 @@ namespace testProjet
         }
 
         //Regarde l'état de la news, son domain et son effet, puis le return
-        public Tuple<string, double> Check ()
+        public Tuple<string, double, string> Check ()
        {
             if (state == "activé")
             {
-                return Tuple.Create( affect, typeOfAffect );
+                return Tuple.Create( affect, typeOfAffect, title );
             }
             else
             {
-                return Tuple.Create( "none", 0.0 );
+                return Tuple.Create( "none", 0.0,"" );
             }
        }
 

@@ -73,7 +73,7 @@ namespace testProjet
         {
             foreach( var pair in N )
             {
-               Tuple<string, double> result =  pair.Value.Check();
+               Tuple<string, double, string> result =  pair.Value.Check();
                u.CheckNews( result, A );
 
             }
@@ -93,6 +93,11 @@ namespace testProjet
             return Activate;
         }
 
-        
+
+
+        internal void stopNewsAction( string title, string affect )
+        {
+            u.action.stopNewsAction( title, affect );
+        }
     }
 }

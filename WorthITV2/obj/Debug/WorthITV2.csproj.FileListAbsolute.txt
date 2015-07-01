@@ -1,0 +1,5 @@
+C:\Dev\S3\testProjet\WorthITV2\bin\Debug\WorthITV2.dll
+C:\Dev\S3\testProjet\WorthITV2\bin\Debug\WorthITV2.pdb
+C:\Dev\S3\testProjet\WorthITV2\obj\Debug\WorthITV2.csprojResolveAssemblyReference.cache
+C:\Dev\S3\testProjet\WorthITV2\obj\Debug\WorthITV2.dll
+C:\Dev\S3\testProjet\WorthITV2\obj\Debug\WorthITV2.pdb
